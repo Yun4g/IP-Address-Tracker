@@ -5,7 +5,7 @@ const getIpData = async (ip) =>{
         let ipAddressResponse = await fetch(url);
         if (ipAddressResponse.status !== 200) {
             document.querySelector("#container").innerHTML = ` 
-                <p class="text-sm grey tracking-widest mt-8 mb-2"> could not get data from server</p>
+                <p class="text-sm grey tracking-widest mt-8 mb-2">  Data not found</p>
                 <h3 class="text-3xl darkgrey">status ${ipAddressResponse.status}</h3>
             `;
             return; 
