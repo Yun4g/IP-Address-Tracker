@@ -4,7 +4,11 @@ const getIpData = async (ip) =>{
 
         let ipAddressResponse = await fetch(url);
         if (ipAddressResponse.status !== 200) {
-            throw new Error (`error status: ${response.status}`)
+            document.querySelector("#container").innerHTML = ` 
+                <p class="text-sm grey tracking-widest mt-8 mb-2"> could not get data from server</p>
+                <h3 class="text-3xl darkgrey">status ${ipAddressResponse.status}</h3>
+            `;
+            return; 
         }
     
         let data = await ipAddressResponse.json()
