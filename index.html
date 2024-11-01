@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>IP Address Tracker</title>
+</head>
+<body class="">
+    <main class="flex flex-col ">
+        <section class="custom-bg p-6 w-full text-center justify-center absolute">
+            <div class=" w-full flex flex-col justify-center align-center">
+                
+            <h3 class="text-white  text-2xl mb-8">IP Address Tracker</h3>
+      
+            <div class="  flex justify-center    mb-6 ">
+           <div class="bg-white rounded-xl flex lg:w-74  sm:w-74  overflow-hidden" >
+                <input type="text" class="mr-18 h-10 p-6 outline-none p-2 text-xl" id="ipinput" placeholder="Enter IP address" class="" />
+                <button class="ml-1 bg-black  text-white rounded-r-xl  p-4  " onclick="resquestBtn()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+                </button>
+            </div>
+            </div>
+        
+        </div>
+            <div class="border bg-white  p-6  rounded-xl" id="container">
+                <div class="">
+                    <p class="text-sm grey tracking-widest mb-2">IP ADDRESS</p>
+                    <p class="text-3xl darkgrey">192.212.174.101</p>
+                </div>
+                <div class="">
+                    <p class="text-sm grey tracking-widest mt-8 mb-2">LOCATION</p>
+                    <h3 class="text-3xl darkgrey">Brooklyn, NY 10001</h3>
+                </div>
+                <div class="">
+                    <p class="text-sm grey tracking-widest mt-8  mb-2">TIMEZONE</p>
+                    <h3 class="text-3xl darkgrey">UTC-05:00</h3>
+                </div>
+                <div class="">
+                    <p class="text-sm grey tracking-widest mt-8  mb-2">ISP</p>
+                    <h3 class="text-3xl darkgrey">spaceX starlink</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP IMAGES -->
+        <section class="custom-bg2  align-center ">
+
+          <img src="./images/icon-location.svg" class=" "  alt="">
+        </section>
+    </main>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

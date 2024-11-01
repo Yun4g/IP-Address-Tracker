@@ -1,0 +1,50 @@
+@font-face {
+    font-family:tonye ;
+    src: url(./Fonts/Rubik-Bold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: delight;
+    src: url(./Fonts/Rubik-Light.ttf);
+    font-weight: 400;
+}
+
+h3{
+    font-family: "tonye", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+p{
+    font-family: "tonye", sans-serif !important;
+    font-weight: 400 !important;
+}
+.grey{
+    color: rgb(151, 148, 148);
+}
+
+.darkgrey{
+    color: rgb(98, 96, 96);
+}
+.custom-bg {
+    background-image: url('./images/pattern-bg-mobile.png'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 35vh; 
+}
+.custom-bg1 {
+    background-image: url('./images/pattern-bg-desktop.png'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 20vh; /* Set the height as needed */
+}
+
+.custom-bg2 {
+    background-image: url('./images/work\ image\ design\ map.png'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 100vh; /* Set the height as needed */
+}
